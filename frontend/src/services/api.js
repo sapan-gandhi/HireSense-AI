@@ -1,10 +1,7 @@
 import axios from 'axios'
 
-// Hardcoded for production — Vite env vars require rebuild to take effect
-const BACKEND = 'https://hiresense-ai-1.onrender.com'
-
 const api = axios.create({
-  baseURL: `${BACKEND}/api`,
+  baseURL: 'https://hiresense-ai-1.onrender.com/api',
   timeout: 30000,
   headers: { 'Content-Type': 'application/json' },
 })
